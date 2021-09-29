@@ -1,0 +1,289 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 1.4rem;
+  color: #222;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteneur {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/************************************************************************************************* HEADER *************************************************************************************************************/
+
+header {
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+}
+
+.btn-app {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: url("images/btn-app.png"), rgba(255, 255, 255);
+  background-position: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-app:hover {
+  background: url("images/btn-app.png"), rgba(3, 3, 3, 0.1);
+  background-position: center;
+}
+
+.btn-me {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255);
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-me:hover {
+  background: rgba(3, 3, 3, 0.1);
+}
+
+.img-me {
+  border-radius: 50%;
+}
+
+/*************************************************************************************************** CORPS PAGE *******************************************************************************************************/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+  margin-bottom: 17rem;
+}
+
+.main p {
+  text-align: center;
+}
+
+.main a {
+  text-decoration: none;
+}
+
+.main p a:hover {
+  text-decoration: underline;
+}
+
+.gifshare {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.gifshare button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255);
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.gifshare button img {
+  height: 2rem;
+  opacity: 0.7;
+}
+
+.gifshare button img:hover {
+  opacity: 1;
+}
+
+.btn-recherche-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.btn-google,
+.btn-chance {
+  height: 3.5rem;
+  width: 15rem;
+  margin-right: 1rem;
+  outline: none;
+  color: #3c4043;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background: #f8f9fa;
+}
+
+.btn-google:hover,
+.btn-chance:hover {
+  border: rgba(0, 0, 0, 0.1) solid 0.1rem;
+}
+
+.recherche-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid rgba(0, 0, 0, 0.1) 0.1rem;
+  border-radius: 3rem;
+  width: 59rem;
+  height: 4.5rem;
+  margin: 1rem;
+}
+
+.recherche-google:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.recherche-google input {
+  width: 50rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.loupe {
+  height: 2rem;
+  margin-left: 1rem;
+  opacity: 0.7;
+}
+
+.vocale {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+/***************************************************************************************************************** FOOTER *********************************************************************************************/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+}
+
+/********* Footer 1 *********/
+
+.footer1 {
+  margin: 0;
+  padding: 1.5rem 3rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/********* Footer hr *********/
+
+hr {
+  margin: 0;
+  border: none;
+  height: 0.1rem;
+  background: rgba(3, 3, 3, 0.1);
+}
+
+/********* Footer 2 *********/
+
+.footer2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0;
+  padding: 1.5rem 3rem;
+}
+
+.test1 ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.test2 {
+  text-align: center;
+}
+
+.test3 ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer2 .ligauche li {
+  margin-right: 2rem;
+}
+
+.footer2 .lidroite li {
+  margin-left: 2rem;
+}
+
+.footer2 a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.footer2 a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer2 button {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.54);
+  outline: none;
+}
+
+.footer2 button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.imgf {
+  margin-right: 0.5rem;
+  height: 1.5rem;
+}
